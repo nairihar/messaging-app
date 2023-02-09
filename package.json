@@ -1,0 +1,16 @@
+{
+  "name": "messaging-app",
+  "private": true,
+  "workspaces": [
+    "packages/**"
+  ],
+  "scripts": {
+    "bootstrap": "lerna exec npm install",
+    "start": "lerna run start",
+    "dev:server": "lerna run dev --scope=messaging-app-server",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "lerna": "^6.4.1"
+  }
+}

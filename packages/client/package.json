@@ -1,0 +1,10 @@
+{
+  "name": "messaging-app-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test\" && exit 0"
+  },
+  "license": "ISC"
+}
