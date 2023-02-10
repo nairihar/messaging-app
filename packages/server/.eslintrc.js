@@ -13,6 +13,8 @@ module.exports = {
     'no-console': process.env.ENV === 'production' ? 'error' : 'off',
     'func-names': 'off',
     'consistent-return': 'off',
+    'max-classes-per-file': 'off',
+    'import/prefer-default-export': 'off',
     'key-spacing': ['error', { align: 'colon' }],
     'no-param-reassign': 'off',
     'no-plusplus': 'off',

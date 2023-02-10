@@ -9,7 +9,7 @@
     "dev": "ts-node-dev ./index.ts | pino-pretty --colorize",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint . --ext .ts --fix",
-    "prettier-format": "prettier --config .prettierrc './**/*.ts' --write",
+    "format": "prettier --config .prettierrc './**/*.ts' --write",
     "test": "echo \"Test Server\" && exit 0"
   },
   "repository": {
@@ -23,10 +23,14 @@
   "homepage": "https://github.com/nairihar/messaging-app#readme",
   "dependencies": {
     "express": "^4.18.2",
+    "joi": "^17.7.0",
     "mongoose": "^6.9.1",
-    "redis": "^4.6.4"
+    "morgan": "^1.10.0",
+    "redis": "^4.6.4",
+    "winston": "^3.8.2"
   },
   "devDependencies": {
+    "@types/joi": "^17.2.3",
     "@types/node": "^18.13.0",
     "@typescript-eslint/eslint-plugin": "^5.51.0",
     "@typescript-eslint/parser": "^5.51.0",

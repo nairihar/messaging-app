@@ -1,5 +1,8 @@
-export default function (router) {
-  router.post('/messages/users/:user_name', () => {});
+import { sendMessage } from './messages-controller-post';
+import { getUserMessages } from './messages-controller-get';
 
-  router.get('/messages/users/:user_name', () => {});
+export default function (router) {
+    router.get('/messages/users/:user_name', getUserMessages);
+
+    router.post('/messages/users/:user_name', sendMessage);
 }

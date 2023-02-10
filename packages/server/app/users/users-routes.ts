@@ -1,5 +1,8 @@
-export default function (router) {
-  router.get('/users', () => {});
+import { getUsers } from './users-controller-get';
+import { registerUser } from './users-controller-post';
 
-  router.post('/users/register', () => {});
+export default function (router) {
+    router.get('/users', getUsers);
+
+    router.post('/users/register', registerUser);
 }

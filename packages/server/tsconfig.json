@@ -13,6 +13,7 @@
     "sourceMap": true,
     "outDir": "build",
     "baseUrl": "./",
+      "typeRoots": ["./app/_common/@types", "./node_modules/@types"],
     "paths": {
       "config/*": [
         "config/*"
