@@ -1,16 +1,26 @@
 {
-  "name": "messaging-app",
-  "private": true,
-  "workspaces": [
-    "packages/**"
-  ],
-  "scripts": {
-    "bootstrap": "lerna exec npm install",
-    "start": "lerna run start",
-    "dev:server": "lerna run dev --scope=messaging-app-server",
-    "test": "lerna run test"
-  },
-  "devDependencies": {
-    "lerna": "^6.4.1"
-  }
+    "name": "messaging-app",
+    "homepage": "https://github.com/nairihar/messaging-app#readme",
+    "description": "MVP of a messaging app that will set the foundations for the internal messaging communication tool.",
+    "private": true,
+    "workspaces": [
+        "packages/**"
+    ],
+    "scripts": {
+        "bootstrap": "lerna exec npm install",
+        "start": "lerna run start",
+        "dev:server": "lerna run dev --scope=messaging-app-api-server",
+        "test": "lerna run test"
+    },
+    "devDependencies": {
+        "lerna": "^6.4.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nairihar/messaging-app.git"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/nairihar/messaging-app/issues"
+    }
 }

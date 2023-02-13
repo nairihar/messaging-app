@@ -1,0 +1,14 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+    name: messaging-app
+    region: eu-north-1
+
+nodeGroups:
+    - name: ng-2
+      instanceType: t3.medium
+      desiredCapacity: 2
+      volumeSize: 30
+availabilityZones: ['eu-north-1a', 'eu-north-1b']
+
